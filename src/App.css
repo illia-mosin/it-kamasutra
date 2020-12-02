@@ -8,19 +8,4 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
-.header {
-  grid-area: h;
-  background-color: red;
-}
-.header img {
-  height: 50px;
-  width: 50px;
-}
-.nav {
-  grid-area: n;
-  background-color: yellow;
-}
-.main{
-  grid-area: m;
-  background-color: darkorange;
-}
+
