@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './MyPosts.module.css';
+import Post from "../Post/Post";
 
 const MyPosts = () => {
     return (
@@ -8,26 +9,12 @@ const MyPosts = () => {
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <button>Add post</button>
             </div>
-            <div className={s.posts}>
-                <div className={s.item}>
-                    post 1
-                </div>
-                <div className={s.item}>
-                    post 2
-                </div>
-                <div className={s.item}>
-                    post 3
-                </div>
-                <div className={s.item}>
-                    post 4
-                </div>
-                <div className={s.item}>
-                    post 5
-                </div>
-
-            </div>
+            <Post message = "Hello, world!" likeCounter ="20"/>
+            <Post message = "my second props on this project))" likeCounter = "18"/>
+            <Post message = "it`s not so hard)" likeCounter = "15"/>
+            <Post message = "fast learning react)" likeCounter = "11"/>
         </main>
     );
 }
 
-export default MyPosts
+export default MyPosts;
